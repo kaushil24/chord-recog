@@ -1,0 +1,39 @@
+**From jon nordby - audio classification [europython conf]**
+mel filter spectogram (mimics human hearing)
+log scale normalization (to reduce the large spectrum) 
+	You can do mean normalization either on mean of each frame or on mean of the whole dataset
+librosa (sound processing lib)
+SB-CNN is a model for audio classif.
+Thesis of: Environment sound classification on microcontroller using CNN: github.com/jonnor/ESC-CNN-microcontroller 
+Data augmentation (on spectogram): 
+	Time shifting
+	time stretch
+	pitchshift up (or down)
+	
+Look Listen Learn (L^3) is a pretrained model to convert 1sec audio into 512 dimentional vector. It has python package called openl3
+30:30 - software to annot audio (audacity)
+[to search] how to remove white noise
+[to search] 1d conv NN for classification
+
+****Resources from seth adams's DSP with DL series*****
+Intro to DSP blogs: 
+
+http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/
+https://haythamfayek.com/2016/04/21/speech-processing-for-machine-learning.html
+http://datagenetics.com/blog/november32012/index.html
+
+P2
+python_speech_features :Lib for DSP
+how to know sampling file of .wav: use from scipy.io import wavfile
+
+**latese paper**:Deep Learning-Based Music Chord Family Identification ........... 175
+Himadri Mukherjee, Ankita Dhar, Bachchu Paul, Sk. Md. Obaidullah,
+K. C. Santosh, Santanu Phadikar and Kaushik Roy
+https://sci-hub.tw/10.1007/978-981-15-1084-7
+
+**article on TDS on spectograms***:
+how to remove silent edges: librosa.effects.trim(y)
+
+
+
+
